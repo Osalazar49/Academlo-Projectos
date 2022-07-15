@@ -1,505 +1,723 @@
-:root{ --header-height: 3.5rem;
-    --first-color: hsl(354, 78%, 60%);
-    --button-color: hsl(0, 0%, 17%);
-    --button-color-alt: hsl(0, 0%, 21%);
-    --card-color: hsl(0, 0%, 90%);
-    --title-color: hsl(0, 0%, 15%);
-    --text-color: hsl(0, 0%, 35%);
-    --text-color-light: hsl(0, 0%, 55%);
-    --body-color: hsl(206, 4%, 97%);
-    --container-color: #fff;
-    --border-color: hsl(0, 0%, 94%);
-    --body-font: 'Roboto', sans-serif;
-    --biggest-font-size: 2rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
-    --font-medium: 500;
-    --font-bold: 700;
-    --mb-0-5: .5rem;
-    --mb-0-75: .75rem;
-    --mb-1: 1rem;
-    --mb-1-5: 1.5rem;
-    --mb-2: 2rem;
-    --mb-2-5: 2.5rem;
-    --mb-3: 3rem;
-    --z-tooltip: 10;
-    --z-fixed: 100;}
+:root {
+  
+    --color-green: #197F5B;
+    --color-orange: #EF9919;
+    --color-white: #F9F5F2;
+    --color-white2: #F0EBE3;
 
-    *{   
-
-
-
-        padding: 0px;
-        margin: 0px;
-    }
+    --color-grey:  #898AA6;
     
 
-    main {
+
+}
+
+*{  box-sizing: border-box;
+    padding: 0;
+    margin:0;}
+
+    
+
+body {margin: auto;
 
 
-        max-width: 800px;
 
+        }
+    
+
+    main{ 
         margin:auto;
+
+        max-width: 600px;
     }
 
-    main  header  {
+header{
 
-        
-        height: 12vh; 
-        position: relative;
+    background-color: var(--color-green);
 
-    }
+    color: #F9F5F2;
 
-    main  header .bolsa_lunita .bolsa1 {
-       
-        position: absolute;
-
-        right: 0;
-        top: 2rem;
+    font-size: 1rem; 
+}
 
 
-        height: 1.5rem;
-        width: 1.5rem;
-    }
-
-    main  header .bolsa_lunita .bolsa2 {
-       
-        position: absolute;
-
-        right: 2rem;
-        top: 2rem;
+nav ul{
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+gap: 0.2rem;
+list-style: none;
+padding-right: 0.5rem;
 
 
-        height: 1.5rem;
-        width: 1.5rem;
-    }
+}
+
+nav ul li {
+
+    border-right: solid white 2px;
+}
+
+section{ 
+    position: relative;
+}
 
 
-   
-
-
-
-    main  header nav ul {
-
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 2rem;
-        align-items: center;
-        list-style: none;
-        color: var(--text-color);
-        font-weight: 100;
-
-        font-size: 0.8rem;
-        padding: auto;
-
-    }
-
-    main header nav ul h3 {
-
-        font-size: 1.2rem;
-        color: black;
-
-
-
-    }
-
-   
-
-    main .container {
-     
-        display: grid;
-
-        grid-template-columns: auto auto;
-        gap:2rem; 
-
-
-
-
-    }
-
-
-    main .container .front_image {
-
-        
-
-        max-width: 40vw;
-        background-color: var(--first-color);
-        display: grid;
-        grid-column: 3;
-        
-       
-        
-
-
-    }
-
-    /* imagen de principal */
-
-
-    main .container .front_image .img_front{
+.Profile_section  {
     
-      
-       display: block;       
-       flex-direction: column;
-       align-self: flex-end;
+    text-align: center;
 
-        margin: auto;
-        padding: 1rem;
-        max-height: 100%;
-        max-width: 100%;
-
-    }
-
-    main .container .title1 {  
     display: grid;
-    grid-column: 1;
-    grid-row:1; 
+    grid-template-columns: 1fr ;
 
+    height: 67vh;
+    background-color: var(--color-green);
+    background-size: 500px 600px;
+    max-width: 600px;
+    max-height: 800px;
+   
+    
+}
+
+.Profile_section .Profile {
+    
+   
+    
+    max-height: 100%;
+    
+    position: relative;
+    
+
+
+}
+
+.Profile_section .Profile  .img_profile{
+    
+    max-width: 40vw;
+    max-height: 40vh;
+    
+   
+   
+    
+
+
+}
+
+
+.Profile_section .Profile .linkedin{
+
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    left: 160px;
+    top:180px;
+   
+
+
+}
+
+.Profile_section .Profile .img_instagram {
+
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    right: 270px;
+    top: 230px
+   
+
+
+}
+
+
+
+
+main .input .input_2 {
+    display: grid;
+    grid-template-columns: 1fr;
+   
+    text-align: center;
+   
+    background-color: var(--color-white2);
+    height: 20vh;
+
+
+
+}
+
+main .input .input_2 h2{
+
+    margin-top: 2rem;
+
+}
+
+
+main .input  .button_1 .input_3{
+
+
+    width: 20rem;
+    height: 70%;
+
+    border-radius: 1rem;
+}
+
+
+main .input  .button_1 .button_2{
+
+ width: 5rem;
+ height: 70%;
+ border-radius: 1rem;
+ background-color: var(--color-green);
+ color:#fff;
+ font-size: 1.5rem;
+ font-weight: bolder;
+
+    
+}
+
+
+main .About_me h2{
+    margin-top: 2rem;
+
+    margin-bottom: 1rem;
+}
+
+main .About_me .caja1 {
+   
+     border-left: solid #197F5B 10px;
+     padding-left: 15px;
+     margin-bottom: 1rem;
+
+
+}
+
+main .About_me .caja2 {
+     
+    text-align: center;
+    height: 10vh;
+
+    font-size: 3rem;
+
+
+
+}
+
+
+main .About_me .caja2  button {
+
+    border-radius: 1rem;
+    height: 40%;
+    width: 40%;
+    background-color: var(--color-green);
+    color: #fff
     
 
 }
 
-    main .container .title1 h1 {
 
-        font-size: var(1.5rem);
-        margin-top: 2rem;
-        
+.Studies {
 
+text-align: center;
 
+height: 30vh;
 
+}
 
-    }
+main .Studies {
 
-    main .container .title1 p{
-
-
-        margin-top: 0.5px; 
-    }
-    
-
-    main .container .title1 .collection{
-
-        color: var(--button-color)
-
-
-    }
-
-
-    main .container .title1 h2 {
-
-        color:var(--first-color);
-        margin-top: 1rem;
-
-    }
-
-
-
-    main .container .button1 .caja1 {
-
-        height: 4vh;
-
-        width: auto;
-        background-color: gray;
-        font-size: var(--small-font-size);
-    }
-
-    main .container .button1 .caja2 {
-
-
-        height:5vh;
-        width: auto;
-
-        background-color: black;
-
-        color:#fff
-
-
-
-    }
-
-    main .container2 ul {
-
-        
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        
-        list-style: none;
-
-        margin: 5rem 2rem;
-        text-align: center;
-        font-weight: 400;
-       
-
-    }
-
-    main .container2 ul li{
-
-       
-        border-right: solid black 2px;
-
-
-
-
-    }
-
-
-    main .container2 ul span {
-
-        font-size: var(--small-font-size);
-        display: block;
-
-
-
-    }
-
-    main .images {
-
-    height: 80vh;
-    width: 100%;
-
+    margin-top: 2rem;
     display: grid;
-
-    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-columns:  1fr 1fr;
+    gap: 2rem;
     
-    padding: 2rem;
 
-    gap:2rem; 
-
+    
 
 
-    }
+}
 
+main .Studies .Monterrey{
 
-    main .images .shirt {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       justify-content: center;
-
-
-        height: 50%;
-        background-color: var(--card-color);}
-
-
-    main .images .shirt .img_shirt1{
-
-        width: 80%;
-        height: 60%;
-
-
-
-
-    }
-    main  main .images .shirt .caja {
-
-        height:30vh;
-
-        width: 100% ;  /* Colorear caja de blanco  */
-
-        
-       
-
-    }
-
-    main .images .shirt  ul{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        gap:1px;
-       
-        
-
-    }
-
-    main .images .shirt ul :nth-child(1) {
-       
-        border-right: solid black 1px;
-
-
-
-    }
-
-    main .images button  {
-
-     border-radius: 100%;
-     height: 2rem;
-     width: 2rem;
-     margin-top: 1rem;
-     border:none;
-     outline: none;
-     font-size: 1.5rem;
-
-    }
-
-   
- footer {
-
-    background-color: var(--card-color);
-
-    height: 30vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    padding-top: 1rem;
   
-  gap: 8rem;
+  background-color: var(--color-white2);
+  border-radius: 2rem;
 
-  padding-top: 3rem;
+  
+ 
+  
+
+}
+
+main .Studies .Monterrey h2{
+
+    margin-bottom: 2rem;
+
+
+}
+
+
+main .Studies .Academlo{
+
+    
+    grid-template-rows: 1fr;
+
+    background-color: var(--color-white2);
+    border-radius: 2rem;
+    
+    
+    
+    
+ 
+    
+  }
+
+
+  main .Studies .Academlo h2 {
+
+    margin-bottom: 0.5rem;
+
+  }
+
+
+
+main .Habilidades h2{
+
+padding-top: 5rem;
+text-align: center;
+color: black;
+font-weight: bold;
+font-size: 2rem;
+
+}
+
+main .Habilidades  .Especificaciones {
+
+    font-size: 1.5rem;
+        
+    Display:flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    gap: 1rem;
+    height: 50vh;
+    max-width: 100vh;
+    margin: auto;}
+
+
+main .Habilidades  .Especificaciones :nth-child(1) .web_design{
+
+
+  
+    box-sizing: border-box; 
+
+    border: 5px solid gray;
+
+    border-radius: 1rem;
+    height: 2vh;
+    max-width: 100%;
+
+}
+
+
+main .Habilidades  .Especificaciones :nth-child(2) .interaction_design {
+
+    box-sizing: border-box; 
+
+    border: 5px solid gray;
+
+    border-radius: 1rem;
+    height: 2vh;
+    max-width: 100%;}
+
+main .Habilidades  .Especificaciones :nth-child(3) .UX{
+
+    box-sizing: border-box; 
+
+    border: 5px solid gray;
+
+    border-radius: 1rem;
+    height: 2vh;
+    max-width: 100%;}
+
+main .Habilidades  .Especificaciones :nth-child(4) .Frameworks{
+
+    box-sizing: border-box; 
+
+    border: 5px solid gray;
+
+    border-radius: 1rem;
+    height: 2vh;
+    max-width: 100%;;
+   }
+
+
+main .Habilidades  .Especificaciones :nth-child(1) .porcentaje1{
+
+    font-size: 1rem;
+    text-align: end;
+    }
+
+
+main .Habilidades  .Especificaciones :nth-child(2) .porcentaje2{
+
+    font-size: 1rem;
+    text-align: end;
+   }
+
+main .Habilidades  .Especificaciones :nth-child(3) .porcentaje_3{
+
+    font-size: 1rem;
+    text-align: end;
+    }
+
+main .Habilidades  .Especificaciones  :nth-child(4) .porcentaje_4{
+
+    font-size: 1rem;
+    text-align: end;
+    
+   }
+
+   main .Habilidades  .Especificaciones :nth-child(1) .web_design .progress_1 {
+
+    background-color: var(--color-green) ;
+
+    width: 80%;
+    height: 100%;
+
+   }
+
+   main .Habilidades  .Especificaciones :nth-child(2) .interaction_design .progress_2 {
+
+    background-color: var(--color-green);
+
+    width: 80%;
+    height: 100%;
+
+   }
+
+   main .Habilidades  .Especificaciones :nth-child(3) .UX .progress_3 {
+
+    background-color: var(--color-green);
+
+    width: 70%;
+    height: 100%;
+
+   }
+
+   main .Habilidades  .Especificaciones :nth-child(4) .Frameworks .progress_4 {
+
+    background-color: var(--color-green);
+
+    width: 70%;
+    height: 100%;
+
+   }
+
+
+   main .Habilidades  .Especificaciones :nth-child(1) p {
+
+   text-align: start;
+
+   }
+
+   main .Habilidades  .Especificaciones :nth-child(2) p {
+
+    text-align: start;
+ 
+    }
+
+    main .Habilidades  .Especificaciones :nth-child(3) p {
+
+        text-align: start;
+     
+        }
+ main .Habilidades  .Especificaciones :nth-child(4) p {
+
+            text-align: start;
+         
+            }
+
+
+
+
+
+main .Experiencia .caja_experiencia h2 {
+
+
+    font-size: 2rem;
+    
+    margin-bottom: 2rem;
+    text-align: center;
 
  
 
 
- }
-
- footer .caja1 ul{
-
-    list-style: none;
-
-
- }
-footer .caja1 ul h3 {
-
-    font-size: 1rem;
-
-    margin-bottom: 1rem;
-
-    
- }
-
- footer :nth-child(4) ul {
-
-
-    display: flex;
-     flex-direction: row ;
-     justify-content: center;
-     margin-top: 1rem;
-     align-items: center;
-     gap: 1rem; 
-
-    
- }
-
- /* carrito */
-
-
- .cartShopping {
-    cursor: pointer;
-    position: fixed;
-    top: 1em;
-    right: 1em;
-    transition: opacity 0.5s;
-    z-index: var(--z-fixed);
 }
 
-.content__cartShopping {
-    position: relative;
+
+main .Experiencia .caja_experiencia  {
+
+
+    background-color: var(--color-white2);
+    display: grid;
+    grid-template-columns: 1fr;
+
+    max-height: 50vh;
+   
+
 }
 
-.content__cartShopping span {
-    position: absolute;
-    top: -8px;
-    right: -8px;
+
+main .Experiencia .caja_experiencia .caja_experiencia_imagenes{
+
+ display: block;
+ display: flex;
+
+ flex-direction: row;
+ justify-content: center;
+
+ flex-wrap: wrap;
+
+ gap:4rem
+
 }
 
-.cartShopping:hover {
-    opacity: 0.7;
-}
+main .Portafolio h2{
 
-.container__shopping {
-    width: 30vw;
-    height: 100vh;
-    background-color: #fff;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: var(--z-tooltip);
-    border-bottom-left-radius: 2em;
-    border-top-left-radius: 2em;
-    margin-right: -100%;
-
-    transition: margin-right 0.5s;
-}
-
-.show__shopping {
-    margin-right: 0;
     text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-.content_shopping {
-    height: 80%;
-    padding: 1em;
-}
-.content_total {
-    height: 20%;
-    background-color: green;
+main .Portafolio {
 
+    margin-top: 10rem;
+
+
+    background-color: var(--color-white2);
+
+    height: 150vh;
+    width: auto;
+}
+
+main .Portafolio .Titles{
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+
+main .Portafolio .Titles .hola_ux{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--color-grey)
+    }
+
+
+
+main .Portafolio  .UX_design .main_image {
+
+
+    height: 50vh;
+
+    width: 40vw;
+}
+main .Portafolio  .UX_design .main_image .img_tools{
+max-width: 60vw;
+ height: 40vh;
+ padding: 1rem;
+ 
+ 
+
+}
+
+main .Portafolio  .UX_design .Project_mobile{
+
+    height: 50vh;
+
+    width: 20vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; 
+
+    padding: 1rem;
+    
+   
+   }
+
+
+   main .Portafolio  .UX_design .Project_mobile .img_59{
+
+    max-width: 30vw;
+   height: 30vh;
+
+   }
+
+   main .Portafolio  .UX_design .Project_mobile .img_60{
+
+    max-width: 30vw;
+   height: 30vh;
+    
+    }
+ 
+    main .Portafolio .webdesign {
+     
+    height: 50vh;
+    max-width: 50vw;
+    padding: 1rem;
+
+
+    }
+
+    main .Portafolio .webdesign .web_image{
+
+
+        height: 30vh;
+        max-width: 50vw;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+main .contacto h2{
+
+text-align: center;
+padding: 2rem;
+font-size: 5rem;
+
+
+}
+     
+
+main .contacto .caja_micontacto {
+
+display: grid;
+
+grid-template-columns: 1fr 1fr ;
+
+gap:4rem;
+
+text-align:center; 
+max-width:100vh;
+padding: 1rem;
+
+height: 20vh;
+
+font-size: 1rem;
+font-weight: bold;
+margin-bottom: 5rem;
+
+
+
+}
+
+
+main .contacto .caja_micontacto .email .caja1_email{
+    background-color: var(--color-white2);
+   
+    border-radius: 100%;
+    height: 20vh;
+    max-width: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 1em;
-}
+    padding: 2rem;
+    
 
-.shopping__img {
-    width: 10px;
+
     
 }
 
-.shopping__img .img_sweeters{
+main .contacto .caja_micontacto .telefono .caja1_telefono {
+
+    background-color: var(--color-white2);
+    
+    border-radius: 100%;
+    height: 20vh;
+    max-width:  20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+
+}
+
+
+main .contacto .caja_micontacto .telefono .caja1_telefono  .img_telefono{
+
 
     height: 10vh;
+    max-width: 10vw;
+    
+  }
+
+
+
+ 
+
+main .contacto .caja_micontacto .email .caja1_email .img_mail{
+
+
+    height: 10vh;
+    max-width: 10vw;
+
+
+}
+ 
+
+main .contacto .caja_micontacto .email  .titulo_email {
+    margin-top: 1rem;
+    text-align: center;
+    max-width: 20vw;
+
+
+ 
 
 }
 
-.shopping__header {
-    display: flex;
-    gap: 1em;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-}
+main .contacto .caja_micontacto .telefono .titulo_telefono {
+    margin-top: 1rem;
+    text-align: center;
+    max-width: 20vw;
 
-.rest,
-.add,
-.del {
-    cursor: pointer;
+
+ 
+
 }
 
 
 
+main footer{
+    margin-top: 2rem;
+    text-align: center;
 
-.content_Items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1em;
+    font-size: 2rem;
+
+    color:var(--color-white);
+
+
+    background-color: var(--color-green);
+
+    max-height: 20vh;
+
+    width: 100%;}
+
+
+main footer h2{
+
+padding-top:1rem
+
+
 }
 
-
-
-.container__principal {
-    max-width: 1000px;
-    margin: auto;
-    margin-top: 2em;
-    padding: 1em;
-}
-
-
-.food {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1em;
-}
-
-.food__img {
-    width: 60px;
-}
 
 
